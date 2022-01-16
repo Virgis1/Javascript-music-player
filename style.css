@@ -1,0 +1,133 @@
+.container {
+  width: 70%;
+  max-width: 400px;
+  height: 550px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.top-buttons i {
+  font-size: 26px;
+  cursor: pointer;
+}
+.now-playing {
+  text-align: center;
+  margin-bottom: 20px
+}
+#favourite {
+  width: 80%;
+  height: 250px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
+  background-color: #f2f2f2;
+  font-weight: bolder;
+  font-size: 20px
+}
+#favourite .favourite-list {
+  color: red;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.music-container {
+  width: 80%;
+  height: 250px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
+  background-color: #f2f2f2
+}
+.music-container ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.music-container ul li {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  list-style-type: none;
+}
+.music-container ul li:hover {
+  background-color: white
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+#photo-container {
+  width: 80%;
+  height: 250px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+}
+#photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px
+}
+.song-button, .bottom-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.song-button i, .bottom-button i {
+  cursor: pointer;
+}
+.bottom-button i:nth-child(3) {
+  color: red;
+}
+#pause {
+  display: none;
+}
+.progress-area {
+  height: 6px;
+  width: 100%;
+  background: #e6e6e6;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px 0 40px 0;
+}
+.progress-bar {
+  height: inherit;
+  border-radius: inherit;
+  width: 0;
+  background: red;
+  position: relative;
+}
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: black;
+  border-radius: inherit;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease
+}
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+}
+.progress-area .timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-buttons">
+      <i onclick="showList()" class="fas fa-list"></i>
+    </div>
+    <div class="now-playing">
+      <h3>Now playing</h3>
+      <div class="song-details">
+        <span class="artist"></span> - 
+        <span class="name"></span>
+      </div>
+      
+    </div>
+    <div id="favourite">Your favourite list:</div>
+    <div id="music-container" class="music-container">
+      <ul></ul>
+    </div>
+    <div id="photo-container">
+      <img src="" alt="">
+    </div>
+    <audio id="audio" src=""></audio>
+    <div class="song-button">
+      <i id="prev" class="fas fa-step-backward"></i>
+      <div class="play-pause">
+        <i id="play" class="fas fa-play-circle"></i>
+        <i id="pause" class="fas fa-pause-circle"></i>
+      </div>
+      <i id="next" class="fas fa-step-forward"></i>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <span class="current-time">0:00</span>
+        <span class="duration"></span>
+      </div>
+    </div>
+    <div class="bottom-button">
+      <i id="repeat" class="fas fa-redo"></i>
+      <i id="likeSong" class="fas fa-heart"></i>
+      <i onclick="favourite()" class="fas fa-star"></i>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
